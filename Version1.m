@@ -1,11 +1,4 @@
-list = dir('DB');
-len = length(list);
-Tables = [];
-for i = 3:len 
-    name = list(i).name;
-    str = ['DB/',name];
-    T = readtable(str);
-    size(T)
-end
-    
+Market = readtable('DB/Market_Data.csv');
+Compund = readtable('DB/Market_Data_CR.csv');
+Return = readtable('DB/Market_Data_NR.csv');
     
